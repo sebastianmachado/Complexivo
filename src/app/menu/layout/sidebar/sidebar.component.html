@@ -1,0 +1,27 @@
+<div class="side-nav-content">
+  <div class="modules">
+    <h5 class="text-center">{{ valorInterpolado }}</h5>
+  </div>  
+  <ul class="nav-list" [ngClass]="{'nav-list-open': sideNavState}">
+    <li class="nav-list-item" *ngFor="let item of menuList">
+      <i class="{{item.icon}}"></i>
+      <span>
+        <a routerLink="{{item.route}}">
+          {{item.name}}
+        </a>
+      </span>
+    </li>
+   <!--  <li class="nav-list-item" style="margin-top: 320px;">
+      <a (click)="logout()" class="logout-button btn btn-danger">
+        <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+      </a>
+    </li> -->
+    <li class="nav-list-item position-absolute bottom-0">
+      <i class="fa-solid fa-right-from-bracket fa-rotate-180"></i>
+      <span>
+        <a (click)="logout()">Cerrar Sesión</a>
+      </span>
+    </li>
+  </ul>
+</div>
+
