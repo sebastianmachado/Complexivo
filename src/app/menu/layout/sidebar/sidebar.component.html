@@ -1,7 +1,6 @@
-<div class="side-nav-content">
-  <div class="modules">
-    <h5 class="text-center">{{ valorInterpolado }}</h5>
-  </div>  
+<body style="background-color: #252850;">
+<div class="side-nav-content" >
+   
   <ul class="nav-list" [ngClass]="{'nav-list-open': sideNavState}">
     <li class="nav-list-item" *ngFor="let item of menuList">
       <i class="{{item.icon}}"></i>
@@ -24,4 +23,4 @@
     </li>
   </ul>
 </div>
-
+</body>

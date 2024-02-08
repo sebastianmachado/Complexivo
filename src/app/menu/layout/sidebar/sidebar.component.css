@@ -31,7 +31,7 @@
 }
 
 .nav-list-open .nav-list-item:hover {
-  background-color: #B0D9FF;
+  background-color:#252850;
   color           : #000000;
   border-radius   : 10px;
   transition      : 0.5s;
@@ -50,7 +50,7 @@
 .modules {
   display      : grid;
   align-items  : center;
-  background   : #002E59;
+  background   : #252850;
   color        : white;
   width        : 250px;
   height       : 50px;
@@ -72,7 +72,7 @@ a {
 }
 
 span:hover a {
-  color: #002E59;
+  color: #080808;
 }
 
 .fa-solid .fa-id-badge {
